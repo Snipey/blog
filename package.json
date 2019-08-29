@@ -1,0 +1,19 @@
+{
+  "name": "snipey-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "author": "Stephen F",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "markdown-it-highlightjs": "^3.0.0",
+    "tailwindcss": "^1.1.2",
+    "vuepress-plugin-disqus": "^0.1.1",
+    "vuepress-plugin-seo": "^0.1.2"
+  }
+}
