@@ -1,7 +1,7 @@
 module.exports = {
   title: 'What a mess',
   description: 'A place to put my thoughts!',
-  dest: 'dist',
+  dest: 'public',
   serviceWorker: true,
   base: '/',
   postcss: {
