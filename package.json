@@ -15,5 +15,8 @@
     "tailwindcss": "^1.1.2",
     "vuepress-plugin-disqus": "^0.1.1",
     "vuepress-plugin-seo": "^0.1.2"
+  },
+"dependencies": {
+    "vuepress": "^1.0.2"
   }
 }
