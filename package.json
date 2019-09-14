@@ -28,8 +28,10 @@
     "markdown-it-table-of-contents": "^0.4.4",
     "markdown-it-video": "^0.6.3",
     "moment": "^2.24.0",
-    "tailwindcss": "^1.1.2",
-    "vuepress": "next",
-    "vuepress-plugin-disqus": "^0.1.1"
+    "tailwindcss": "^1.1.2"
+  },
+  "dependencies": {
+    "vuepress-plugin-disqus": "^0.1.1",
+    "vuepress": "^1.0.2"
   }
 }
