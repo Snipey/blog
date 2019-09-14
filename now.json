@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "blog",
+    "public": true,
+    "alias": ["blog.snipey.dev"],
+    "regions": ["sfo1", "lhr1"],
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@now/static-build",
+            "config": {
+                "distDir": "./public"
+            }
+        }
+    ]
+}
