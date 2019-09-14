@@ -17,7 +17,6 @@ module.exports = {
   markdown: {
     lineNumbers: true,
     extendMarkdown: md => {
-      md.set({ breaks: true })
       md.use(require('markdown-it-footnote'))
       md.use(require('markdown-it-imsize'))
       md.use(require('markdown-it-video'))

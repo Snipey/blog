@@ -1,42 +1,26 @@
 <template>
-    <div class="">
-        <div class="rounded-lg overflow-hidden shadow-lg p-1 border" style="margin: 8px;">
+    <div class="w-1/3 justify-center">
+        <div class="border rounded-lg shadow">
             <router-link :to="path">
-                <img class="w-full thumb" :src="image" alt="Sunset in the mountains">
+                <img class="rounded-t-lg w-full" style="" :src="image" alt="">
             </router-link>
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2"><router-link :to="path">{{ title }}</router-link></div>
-                <pre class="pb-4">Posted on: {{ formatDate(date)}}</pre>
-                <p class="text-gray-700 text-base break-normal pb-2 border-b mb-4" v-text="description" />
-                <p class="text-gray-700 text-base" v-html="excerpt" />
-            </div>
-            <hr class="w-4/5 mx-auto" />
-            <div class="px-6 py-4" >
-                <font-awesome-icon
-                class="mr-1"
-                :icon="['fas', 'tag']">
-                </font-awesome-icon>
-                <Tag v-for="tag in tags" :tag="tag" />
+            <div class="p-4">
+                <div class="text-center mb-4">
+                    <router-link
+                        class="text-xl font-bold"
+                        :to="path"
+                    >
+                        {{ title }}
+                    </router-link>
+                </div>
+                <p class="" v-text="description" />
+                <p class="break-words" v-html="excerpt" />
             </div>
         </div>
     </div>
 </template>
-<style>
-.post {
-    width: 100%;
-    height: 650px;
-}
-.thumb {
-    height: 300px;
-}
-</style>
 <script>
-import Tag from './Tag';
-
 export default {
-    components: {
-        Tag,
-    },
     props: {
         title: {
             required: true,
@@ -49,7 +33,7 @@ export default {
             default: '',
         },
         image: {
-            default: 'http://placekitten.com/300/200',
+            default: 'https://picsum.photos/300/170',
         },
         date: {
             default: '',
