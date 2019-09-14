@@ -1,6 +1,7 @@
 module.exports = {
   title: 'What a mess',
   description: 'A place to put my thoughts!',
+  dest: 'public',
   postcss: {
     plugins: [
         require('tailwindcss')('./tailwind.config.js'),
