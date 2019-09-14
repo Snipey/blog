@@ -27,6 +27,7 @@ module.exports = {
         ],
       }
     ],
-    ['disqus', true]
+    ['disqus', true],
+    ['@vuepress/back-to-top']
   ],
 }
