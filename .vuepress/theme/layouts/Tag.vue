@@ -1,7 +1,9 @@
 <template>
-  <ul id="default-layout">
-    <li v-for="tag in $tag.list">
-      <router-link class="page-link" :to="tag.path">{{ tag.name }}</router-link>
-    </li>
-  </ul>
+  <div class="container mx-auto">
+    <div class="flex flex-wrap bg-yellow-200 border" v-for="tag in $tag.list">
+      <router-link class="text-center" :to="tag.path">
+        <img class="h-24" :src="$withBase('/icons/' + tag.name + '.svg')"></img>
+      {{ tag.name }}</router-link>
+    </div>
+  </div>
 </template>

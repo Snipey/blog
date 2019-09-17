@@ -8,7 +8,7 @@ module.exports = {
             dirname: '_posts',
             path: '/',
             pagination: {
-              perPagePosts: 1,
+              perPagePosts: 3,
             },
           },
         ],
@@ -18,8 +18,8 @@ module.exports = {
             keys: ['tag', 'tags'],
             path: '/tag/',
             layout: 'Tag',
+            itemLayout: 'TagLayout',
             frontmatter: { title: 'Tag' },
-            itemlayout: 'Tag',
             pagination: {
               perPagePosts: 6
             }

@@ -1,8 +1,8 @@
 {
-  "name": "70-lines-of-vuepress-blog-theme",
+  "name": "snipey-blog",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/ulivz/40-lines-of-vuepress-blog-theme.git",
+  "repository": "https://github.com/snipey/blog.git",
   "author": "Snipey <snipeydev@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -28,10 +28,11 @@
     "markdown-it-table-of-contents": "^0.4.4",
     "markdown-it-video": "^0.6.3",
     "moment": "^2.24.0",
-    "tailwindcss": "^1.1.2"
+    "tailwindcss": "^1.1.2",
+    "vuepress-plugin-seo": "^0.1.2"
   },
   "dependencies": {
-    "vuepress-plugin-disqus": "^0.1.1",
-    "vuepress": "^1.0.2"
+    "vuepress": "^1.0.2",
+    "vuepress-plugin-disqus": "^0.1.1"
   }
 }
